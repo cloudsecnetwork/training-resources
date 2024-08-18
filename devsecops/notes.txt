@@ -1,0 +1,5 @@
+sudo su
+yum update
+wget -O install.sh https://raw.githubusercontent.com/cloudsecnetwork/training-resources/main/devsecops/docker-compose-install.sh
+chmod +x install.sh
+./install.sh
