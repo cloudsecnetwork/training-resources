@@ -1,5 +1,11 @@
+## Amazone Linux
 sudo su
 yum update
 wget -O install.sh https://raw.githubusercontent.com/cloudsecnetwork/training-resources/main/devsecops/docker-compose-install.sh
 chmod +x install.sh
 ./install.sh
+
+## Ubuntu
+curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+docker-compose --version
