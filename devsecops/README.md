@@ -5,24 +5,36 @@ This guide provides instructions for installing Docker Compose on Amazon Linux a
 Follow the steps below to install Docker Compose on Amazon Linux:
 
 1.  Switch to the root user:
-    `sudo su` 
+   
+    `sudo su`
+
 2.  Update the system packages:
-    `yum update` 
+
+    `yum update`
+
 3.  Download the installation script:
-    `wget -O install.sh https://raw.githubusercontent.com/cloudsecnetwork/training-resources/main/devsecops/docker-compose-install.sh`     
+
+    `wget -O install.sh https://raw.githubusercontent.com/cloudsecnetwork/training-resources/main/devsecops/docker-compose-install.sh`
+
 4.  Make the script executable:
-    `chmod +x install.sh` 
+
+    `chmod +x install.sh`
+    
 5.  Run the installation script:
+   
     `./install.sh` 
 
 ## Ubuntu
 Follow the steps below to install Docker Compose on Ubuntu:
 
 1.  Download the latest version of Docker Compose:
+
     `curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose` 
     
 2.  Make Docker Compose executable:
+   
     `chmod +x /usr/local/bin/docker-compose` 
   
-3.  Verify the installation by checking the version:  
+3.  Verify the installation by checking the version:
+   
     `docker-compose --version`
